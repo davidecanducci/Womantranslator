@@ -1,0 +1,152 @@
+<resources>
+
+    <string name="app_name">Woman Translator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="true_phrase">Cosa intende realmente</string>
+    <string name="app_id">1611911559074277</string>
+    <string name="share">Condividi!</string>
+
+    <string-array name="array_original_women_phrases">
+        <item>1 sì</item>
+        <item>2 no</item>
+        <item>3 forse</item>
+        <item>4 mi dispiace</item>
+        <item>5 ti serve davvero?</item>
+        <item>6 avremmo bisogno di&#8230;</item>
+        <item>7 mi stai ascoltando?</item>
+        <item>8 è una decisione tua</item>
+        <item>9 ma certo, continua pure!</item>
+        <item>10 non sono arrabbiata</item>
+        <item>11 dobbiamo parlare&#8230;</item>
+        <item>12 fai come ti pare allora</item>
+        <item>13 sii romantico, spegni le luci!</item>
+        <item>14 mi ami?</item>
+        <item>15 quanto mi ami?</item>
+        <item>16 scendo subito</item>
+        <item>17 sarò pronta tra un minuto</item>
+        <item>18 dovrei iscrivermi in palestra?</item>
+        <item>19 ho troppa cellulite&#8230;</item>
+        <item>20 no, non ho niente, non ti preoccupare</item>
+        <item>21 guarda che bella giornata, andiamo a fare due passi!</item>
+        <item>22 che lavoro fai?</item>
+        <item>23 amico mio ti voglio bene</item>
+        <item>24 non penso che andreste d\'accordo tu e la mia amica</item>
+        <item>25 amore, oggi hai una faccio strana!</item>
+        <item>26 ho bisogno di un po\' di tempo</item>
+        <item>27 scegli tu</item>
+        <item>28 non sei tu, sono io&#8230;</item>
+        <item>29 quel tuo amico è proprio uno stronzo</item>
+        <item>30 con te mi sento a mio agio, posso parlare di tutto</item>
+        <item>31 ho bisogno di stare un po\' da sola mi sa</item>
+        <item>32 stasera mi devo lavare i capelli</item>
+        <item>33 ho mal di testa</item>
+        <item>34 hai visto cosa ha regalato tizio alla mia amica?</item>
+        <item>35 non ho problemi a farti conoscere i miei amici</item>
+        <item>36 al momento non ho proprio voglia di storie serie</item>
+        <item>37 non è che abbia tanta voglia di guardare quel film stasera</item>
+        <item>38 sei il solito esagerato, ho solo detto che ha un bel sorriso</item>
+        <item>39 non ti preoccupare, può capitare!</item>
+        <item>40 non sono ancora pronta ad uscire con te</item>
+        <item>41 magari ci rivediamo</item>
+        <item>42 quando ci rivediamo?</item>
+        <item>43 hai ragione, sono io che sbaglio</item>
+        <item>44 la verità è che non ti merito</item>
+        <item>45 solo per stanotte dai</item>
+        <item>46 abbassi la tapparella che mi da fastidio la luce?</item>
+        <item>47 sei un tipo davvero carino e gentile, il mio moroso invece è uno stronzo</item>
+        <item>48 non mi sento tanto bene</item>
+        <item>49 il mio numero ce l\'hai, puoi anche scrivermi</item>
+        <item>50 come sto vestita così?</item>
+        <item>51 ma tu ti vuoi mettere nei guai&#8230;</item>
+        <item>52 uffa, non posso uscire stasera, i miei non vogliono</item>
+        <item>53 ma certo che ti amo, ho solo bisogno dei miei spazi</item>
+        <item>54 mi sto godendo la vida da single</item>
+        <item>55 ho scoperto che non ti amo più, è meglio se ci lasciamo</item>
+        <item>56 ho bisogno di un lungo periodo di riflessione sulla mia vita</item>
+        <item>57 tu sì che sei un vero amico!</item>
+        <item>58 di che segno sei?</item>
+        <item>59 ho bisogno di energia, di fantasia!</item>
+        <item>60 sembro grassa con questo vestito?</item>
+        <item>61 mi piaci, però&#8230;</item>
+        <item>62 abbiamo un problema</item>
+        <item>63 non voglio perdere la nostra amicizia</item>
+        <item>64 sei sicuro che vada tutto bene?</item>
+        <item>65 oh sì, sono in zona, sto arrivando!</item>
+        <item>66 devi dirmi qualcosa?</item>
+        <item>67 mamma mia quanto è chic questo ristorante!</item>
+        <item>68 mah, sei freddo oggi...</item>
+    </string-array>
+
+    <string-array name="array_true_phrases">
+        <item>no (o forse un sì a condizione che&#8230;)</item>
+        <item>no (ma a volte pure sì, anche questo come il sì dipende da come gira)</item>
+        <item>no</item>
+        <item>non &#232; che mi dispiace, &#232; che mi fai pena</item>
+        <item>non voglio che tu spenda i tuoi soldi (che vorrei spendere io) per cose che userai solo tu</item>
+        <item>non servir&#224; a niente, ma lo voglio per fare invidia a qualcuno</item>
+        <item>dammi ragione e basta</item>
+        <item>pensa con la mia testa e decidi</item>
+        <item>smetti</item>
+        <item>scappa</item>
+        <item>ho bisogno di lamentarmi immediatamente</item>
+        <item>vedi "&#232; una decisione tua"</item>
+        <item>ho mangiato come una vacca, meglio che tu non veda niente</item>
+        <item>tira fuori la carta di credito</item>
+        <item>ho rotto il tuo pc/xbox/playstation/la tua macchina</item>
+        <item>subito dopo averti fatto aspettare mezz\'ora</item>
+        <item>vedi risposta precedente e aggiungi minuti su minuti</item>
+        <item>dimmi che sono magra</item>
+        <item>dimmi che sono perfetta</item>
+        <item>devi scoprire da solo cosa c\'&#232; che non va</item>
+        <item>oggi non te la do/preparati a tirare fuori la carta di credito</item>
+        <item>quanto potr&#242; spendere in estetista/vestiti/scarpe/borse?</item>
+        <item>SEI STATO FRIENDZONATO. SCAPPA (consigli degli sviluppatori)</item>
+        <item>&#232; più magra, più bella ed ha almeno una taglia in più di reggiseno rispetto a me</item>
+        <item>oggi sei proprio brutto</item>
+        <item>sto meditando di friendzonarti. e voglio farmene altri a random</item>
+        <item>preparati a pagarne le conseguenze</item>
+        <item>non sono io, sei tu!</item>
+        <item>me lo farei volentieri</item>
+        <item>sei brutto. vedi "ti voglio bene, amico mio"</item>
+        <item>sei noioso, cerco un altro</item>
+        <item>non voglio vederti</item>
+        <item>fammi qualche massaggio in silenzio. comunque non te la do</item>
+        <item>apri il portafogli, regalami qualcosa di più costoso</item>
+        <item>ne ho parecchi invece perchè me ne sono fatti la metà</item>
+        <item>voglio darla in giro, ma non a te</item>
+        <item>stasera ho voglia</item>
+        <item>me lo farei volentieri</item>
+        <item>minchia quanto sei sfigato, ma hai 7 anni?</item>
+        <item>sei brutto, non voglio farmi vedere in giro con te</item>
+        <item>magari per te, non per me. non ti voglio pi&#249; vedere</item>
+        <item>mi chiami tra 20 minuti?</item>
+        <item>ho ragione, sei tu che sbagli</item>
+        <item>non mi meriti. anche se sono stata una vacca nella mia vita</item>
+        <item>ho voglia, magari sono impegnata, ma spero non lo venga a sapere nessuno</item>
+        <item>opzione 1: voglio dormire. opzione 2: voglio farlo</item>
+        <item>sei gi&#224; nella friendzone, il mio moroso mi sbatte ovunque</item>
+        <item>lasciami dormire, non te la dar&#242; mai</item>
+        <item>io non ti telefono, voglio essere desiderata. Poi al 99% non te la do</item>
+        <item>dimmi che ho un fisico perfetto e che sono bellisima</item>
+        <item>il mio moroso è un citrullo, penso proprio che possiamo farlo senza problemi</item>
+        <item>vecchia scusa dei genitori, cancellami dai contatti</item>
+        <item>sei cornuto, lo vuoi capire?</item>
+        <item>opzione 1: la sto scialacquando. opzione 2: mi piace uno ma non mi vuole, sono a secco</item>
+        <item>vedi "ma certo che ti amo, ho solo bisogno dei miei spazi". ma da molto pi&#249; tempo.</item>
+        <item>ho voglia di farlo anche con gli alberi, ma non con te. Sparisci</item>
+        <item>non te la darò mai. Vedi "amico mio ti voglio bene" </item>
+        <item>sono una ritardata che crede agli oroscopi e voglio vedere se siamo compatibili</item>
+        <item>ho una gran voglia, ma forse la sfogo con altri</item>
+        <item>ho bisogno di litigare. (nota degli sviluppatori: domanda trabocchetto. la risposta giusta &#232;: per me sei sempre bellissima!)</item>
+        <item>non mi piaci</item>
+        <item>hai un problema bello grosso/mi sa che sono incinta (quindi hai un problema immenso)</item>
+        <item>voglio sfruttarti finch&#232; posso</item>
+        <item>mmm mi sa che mi stai facendo le corna</item>
+        <item>mi sono persa appena fatti 100 metri da casa mia</item>
+        <item>l\'amica del cugino dello zio della mia compagna classe ti ha visto con un\'altra</item>
+        <item>ovviamente offri tu</item>
+        <item>ho voglia di litigare</item>
+    </string-array>
+
+</resources>

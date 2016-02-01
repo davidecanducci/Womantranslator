@@ -5,7 +5,6 @@ package com.letsdosimpleapps.womantranslator;
  */
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,8 +17,6 @@ public class TranslationListAdapter extends BaseAdapter {
 
     private ArrayList<TranslationModel> arrayList_original_women_phrases;
     private Context context;
-    Typeface tf;
-    Typeface tf_regular;
 
     public TranslationListAdapter(Context context, ArrayList<TranslationModel> original_women_phrases) {
         this.arrayList_original_women_phrases = original_women_phrases;

@@ -1,0 +1,150 @@
+<resources>
+
+    <string name="app_name">Woman Translator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1611911559074277</string>
+    <string name="share">Share!</string>
+
+    <string-array name="array_original_women_phrases">
+        <item>1 yes</item>
+        <item>2 no</item>
+        <item>3 maybe</item>
+        <item>4 I\'m sorry</item>
+        <item>5 do you really need it?</item>
+        <item>6 we could need&#8230;</item>
+        <item>7 are you listening to me?</item>
+        <item>8 it\'s your decision</item>
+        <item>9 sure, go on!</item>
+        <item>10 I\'m not angry</item>
+        <item>11 we need to talk&#8230;</item>
+        <item>12 have it your way</item>
+        <item>13 be romantic, turn off lights!</item>
+        <item>14 you love me?</item>
+        <item>15 how much do you love?</item>
+        <item>16 I come immediately</item>
+        <item>17 I\'ll be ready in a minute</item>
+        <item>18 should I go to the gym?</item>
+        <item>19 I\'ve to much cellulite&#8230;</item>
+        <item>20 no, I\'m fine, don\'t worry</item>
+        <item>21 look this wonderful day, let\'s go for a walk!</item>
+        <item>22 what\'s your job?</item>
+        <item>23 I love you my friend</item>
+        <item>24 I don\'t know if you\'re gonna like my friend</item>
+        <item>25 honey, you\'ve got a really strange face today!</item>
+        <item>26 I need a bit\' of time</item>
+        <item>27 I let you choose</item>
+        <item>28 it\'s not you, it\'s me&#8230;</item>
+        <item>29 you\'re friend is such an asshole!</item>
+        <item>30 I feel good with you, I can talk about everything</item>
+        <item>31 I think I need to be alone for a while</item>
+        <item>32 this evening I have to wash my hair</item>
+        <item>33 I have a headache</item>
+        <item>34 did you see what he buyed for his girlfriend?</item>
+        <item>35 I have no problems to let you meet my friends</item>
+        <item>36 at the moment I really don\'t want serious stories</item>
+        <item>37 I think I don\'t want to watch at that film tonight</item>
+        <item>38 you\'re such an exaggerated, I simply said he has beautiful eyes</item>
+        <item>39 don\'t worry, shit happens!</item>
+        <item>40 I\'m not ready to see you alone</item>
+        <item>41 see you maybe</item>
+        <item>42 when can I see you again?</item>
+        <item>43 you\'re right, I\'m wrong</item>
+        <item>44 the truth is that I do not deserve you</item>
+        <item>45 okay, only for tonight</item>
+        <item>46 that light is annoying me, can you lower the blind?</item>
+        <item>47 you\'re such a nice guy, my boyfriend is an asshole instead</item>
+        <item>48 I don\'t feel so good</item>
+        <item>49 you\'ve got my number, you can write if you want</item>
+        <item>50 how am I with this dress?</item>
+        <item>52 hell, I cannot go out tonight, my parents don\'t let me do that</item>
+        <item>53 sure I love you, I simply need my spaces</item>
+        <item>54 I\'m enjoying my single-life</item>
+        <item>55 I found out I don\'t love you anymore, it\'s better if we leave</item>
+        <item>56 I need a very long period of reflection in my life</item>
+        <item>57 you\'re such a great friend!</item>
+        <item>58 what\'s your zodiac sign?</item>
+        <item>59 I need energy, fantasy!</item>
+        <item>60 do I look fat with this dress?</item>
+        <item>61 I like you, but&#8230;</item>
+        <item>62 we have a problem</item>
+        <item>63 I don\'t wanna loose our friendship</item>
+        <item>64 are you sure it\'s all ok?</item>
+        <item>65 oh yes, I\'m near you, I\'m coming!</item>
+        <item>66 are you gonna tell me something?</item>
+        <item>67 my God how chic is this restaurant!</item>
+        <item>68 &#8230;you\'re so cold today&#8230;</item>
+    </string-array>
+
+    <string-array name="array_true_phrases">
+        <item>no (or maybe yes at the condition&#8230;)</item>
+        <item>no (but sometimes yes, even this, like the "yes", depends on the moon)</item>
+        <item>no</item>
+        <item>I\'m not sorry, I simply pity you</item>
+        <item>I don\'t want you to spend your money (that I wanna spend) for something you\'re gonna use alone</item>
+        <item>it\'s useless, but I wan\'t it to make envied someone</item>
+        <item>tell me I\'m right and stop</item>
+        <item>think with my brain and decide</item>
+        <item>stop it</item>
+        <item>run away</item>
+        <item>I need to complain immediately about something</item>
+        <item>look "it\'s your decision"</item>
+        <item>I\'ve eaten like a cow, it\'s better that you can\'t see anything</item>
+        <item>show me your credit card</item>
+        <item>I\'ve broken your pc/xbox/playstation/your car</item>
+        <item>immediately after you waited for 30 minutes</item>
+        <item>look the previous answer and add minutes and minutes</item>
+        <item>tell me I\'m fit</item>
+        <item>tell me I\'m perfect</item>
+        <item>you have to find out by yourself what\'s the matter</item>
+        <item>today abstinence; shopping time, show me the credit card</item>
+        <item>how much could I spend in beautician/dresses/shoes/purses?</item>
+        <item>YOU\'VE BEEN FRIENDZONED. RUN AWAY (developers\' tip)</item>
+        <item>she\'s fitter, more beautiful and her A-side reminds Pamela Anderson\'s</item>
+        <item>you\'re really ugly today</item>
+        <item>I\'m meditating to friendzone you. and I wan\'t to ""meet"" lots of guys</item>
+        <item>prepare yourself to pay the consequences</item>
+        <item>it\'s not me, it\'s you!</item>
+        <item>I wish I can ""meet"" him better</item>
+        <item>you\'re ugly. look after "I love you, my friend"</item>
+        <item>you\'re annoying me, I\'m searching for another guy</item>
+        <item>I don\'t wanna see you</item>
+        <item>make me some massage in silence. anyway, abstinence</item>
+        <item>open the pocket, buy for me something more expensive</item>
+        <item>I have so many problems, I know the dimensions of half of them</item>
+        <item>I wanna "enjoy my life" with anyone but you</item>
+        <item>tonight is the night</item>
+        <item>look "you\'re friend is such an asshole!"</item>
+        <item>you\'re an idiot, how old are you?</item>
+        <item>you\'re ugly, I don\'t want anyone can see me and you together</item>
+        <item>better not</item>
+        <item>can you call me in 20 minutes?</item>
+        <item>I\'m right, you\'re wrong</item>
+        <item>you do not deserve me. even if I\'ve been a bitch in my life</item>
+        <item>I\'m ready, I hope no one will know about tonight</item>
+        <item>option 1: voglio dormire. option 2: I\'m ready</item>
+        <item>you\'ve been putted in the friend-zone, and you\'re gonna stay there. my boyfriend can f*** me everywhere</item>
+        <item>I just wanna sleep</item>
+        <item>I won\'t call you, I wanna be desired. then, no fun at 99,9% of cases</item>
+        <item>tell me I\'m a princess with a perfect body</item>
+        <item>my boyfriend is a stupid, I think we can do whatever we want without any problems</item>
+        <item>old parent\'s excuse, delete her from contacts (tip)</item>
+        <item>you\'ve already been cheated, understand?</item>
+        <item>otpion 1: I\'m doing everything with everyone. option 2: I\'d like to do something with a guy, but he doesn\'t want me</item>
+        <item>look "sure I love you, I simply need my spaces". but from a very long time.</item>
+        <item>I would do everything with everyone, but not with you. go away</item>
+        <item>you won\'t have me neither in 923 years. look after "I love you, my friend" </item>
+        <item>I\'m so stupid that I believe in horoscope, and I wanna see if we\'re compatible in star\'s opinion</item>
+        <item>I wanna do something, but maybe not with you</item>
+        <item>I need to fight. (developers\' tip: it\'s a trap. the right answer is: you\'re always the best for me!)</item>
+        <item>I don\'t like you</item>
+        <item>you\'re in a really big trouble/I think I\'m pregnant (then you\'ve a really really big problem)</item>
+        <item>I wanna exploit you until I can</item>
+        <item>mmm I think you\'re cheating me</item>
+        <item>I got lost after 5 minutes I exit home</item>
+        <item>the friend of the cousin of my aunt saw you talking with a girl that wasn\'t me</item>
+        <item>you offer, obvious</item>
+        <item>I wanna quarrel</item>
+    </string-array>
+
+</resources>

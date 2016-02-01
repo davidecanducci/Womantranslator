@@ -1,48 +1,51 @@
 package com.letsdosimpleapps.womantranslator;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Base64;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.facebook.FacebookSdk;
 
 import junit.framework.Assert;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainListActivity extends AppCompatActivity {
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
 
     String title = "Card RecyclerView";
     String[] arrayOriginalWomenPhrases;
     RecyclerView recyclerList;
     String[] arrayTruePhrases;
-
+    private CardAdapter cardadapt;
     private ListView listView_original_women_phrases;
     private ArrayList<TranslationModel> arrayList_original_women_phrases = new ArrayList<TranslationModel>();
     private TranslationListAdapter adapter;
+    private TextView textView_toolbar_title;
+    private static Typeface face;
+    private ArrayList<CardInfo> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_list);
 
+        // codice per farmi sputare la key hash direttamente da qui
+        /*
         PackageInfo info;
         try {
             info = getPackageManager().getPackageInfo("com.letsdosimpleapps.womantranslator", PackageManager.GET_SIGNATURES);
@@ -61,6 +64,15 @@ public class MainListActivity extends AppCompatActivity {
         } catch (Exception e) {
             Log.e("exception", e.toString());
         }
+        */
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        face = Typeface.createFromAsset(this.getAssets(), "fonts/Nickainley.ttf");
+
+        textView_toolbar_title = (TextView) findViewById(R.id.toolbar_title);
+        textView_toolbar_title.setTypeface(face);
 
         FacebookSdk.sdkInitialize(getApplicationContext());
 
@@ -73,8 +85,8 @@ public class MainListActivity extends AppCompatActivity {
 
         arrayOriginalWomenPhrases = getResources().getStringArray(R.array.array_original_women_phrases);
         arrayTruePhrases = getResources().getStringArray(R.array.array_true_phrases);
-
-        CardAdapter cardadapt = new CardAdapter(createList(arrayOriginalWomenPhrases.length), this);
+        data = createList(arrayOriginalWomenPhrases.length);
+        cardadapt = new CardAdapter(data, this);
         recyclerList.setAdapter(cardadapt);
 
         recyclerList.addOnItemTouchListener(
@@ -82,6 +94,12 @@ public class MainListActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(View view, int position) {
                         Intent intent = new Intent(MainListActivity.this, TruePhraseActivity.class);
+                        data = cardadapt.getDataUpdated();
+                        CardInfo newcard = data.get(position);
+                        int index = arrayOriginalWomenPhrases[position].indexOf(" "); // prelevo l'indice del primo spazio che trovo
+                        String choosenPhrase = new String((newcard.name).substring(0, index)); // dall'indice 0 al primo spazio ottengo la sottostringa con substring
+                        position = Integer.parseInt(choosenPhrase) - 1;
+                        Log.i("ciao", "" + position+ " melllelelelell "+newcard.name);
                         intent.putExtra("idTruePhrase", position);
                         startActivity(intent);
                     }
@@ -89,9 +107,9 @@ public class MainListActivity extends AppCompatActivity {
 
     }
 
-    private List createList(int size) {
+    private ArrayList<CardInfo> createList(int size) {
 
-        List result = new ArrayList();
+        ArrayList<CardInfo> result = new ArrayList<CardInfo>();
         for (int i = 0; i < size; i++) {
             CardInfo card = new CardInfo();
             card.name = arrayOriginalWomenPhrases[i];
@@ -143,6 +161,44 @@ public class MainListActivity extends AppCompatActivity {
         single_phrase.string_original_women_phrase = original_women_phrase;
 
         return single_phrase;
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.searchmenu, menu);
+
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
+                .getActionView();
+        searchView.setSearchableInfo(searchManager
+                .getSearchableInfo(getComponentName()));
+
+        //attivo la funzione di ricerca solo se l'activity ha una listview.
+
+        SearchView.OnQueryTextListener textChangeListener = new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // this is your adapter that will be filtered
+                cardadapt.getFilter().filter(newText);
+                System.out.println("on text chnge text: " + newText);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // this is your adapter that will be filtered
+                cardadapt.getFilter().filter(query);
+                System.out.println("on query submit: " + query);
+                return true;
+            }
+        };
+        searchView.setOnQueryTextListener(textChangeListener);
+
+        return super.onCreateOptionsMenu(menu);
+
+//        return true;
     }
 }
 

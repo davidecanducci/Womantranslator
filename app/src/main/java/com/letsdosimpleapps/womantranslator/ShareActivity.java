@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -16,7 +15,6 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-import com.facebook.share.ShareApi;
 import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.widget.ShareDialog;
 
@@ -80,15 +78,25 @@ public class ShareActivity extends AppCompatActivity {
                 .addPhoto(photo)
                 .build();
 */
-        ShareLinkContent content = new ShareLinkContent.Builder()
+//        ShareLinkContent content = new ShareLinkContent.Builder()
+//                .setContentTitle(womanPhrase)
+//                .setContentDescription("In realtà voleva dire: "+truePhrase)
+//                .setContentUrl(Uri.parse("http://camponebbiu2015.altervista.org/womantranslator/index.html"))
+//                .setImageUrl(Uri.parse("http://camponebbiu2015.altervista.org/womantranslator/img/icona.png"))
+//                .build();
+//        ShareApi shareApi = new ShareApi(content);
+//        ShareApi.share(content, null);
+
+        ShareLinkContent linkContent = new ShareLinkContent.Builder()
                 .setContentTitle(womanPhrase)
                 .setContentDescription("In realtà voleva dire: "+truePhrase)
                 .setContentUrl(Uri.parse("http://camponebbiu2015.altervista.org/womantranslator/index.html"))
+
+                        //.setImageUrl(Uri.parse("android.resource://de.ginkoboy.flashcards/" + R.drawable.logo_flashcards_pro))
                 .setImageUrl(Uri.parse("http://camponebbiu2015.altervista.org/womantranslator/img/icona.png"))
                 .build();
-        ShareApi shareApi = new ShareApi(content);
-        shareApi.setMessage("prova");
-        ShareApi.share(content, null);
+
+        shareDialog.show(linkContent);
 
     }
 
@@ -96,8 +104,6 @@ public class ShareActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int responseCode, Intent data) {
         super.onActivityResult(requestCode, responseCode, data);
         callbackManager.onActivityResult(requestCode, responseCode, data);
-        Toast.makeText(ShareActivity.this, "Traduzione femminile condivisa con successo", Toast.LENGTH_LONG).show();
-        finish();
     }
 
 }
